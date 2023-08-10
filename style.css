@@ -1,0 +1,28 @@
+body{
+    background-color: white;
+}
+nav{
+    background-color: rgb(33, 27, 83);
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    align-content: center;
+    color: white;
+}
+h3{
+    color: white;
+    font-size: 3vw;
+}
+.menu{
+    align-self: flex-end;
+    margin: 10px;
+}
+.menu ul li{
+    display: inline;
+    color: white;
+    margin: 10px;
+
+}
+.menu ul li:hover{
+    pointer-events: stroke;
+}
