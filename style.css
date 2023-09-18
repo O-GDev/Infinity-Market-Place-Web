@@ -1,5 +1,5 @@
 body{
-    background-color: white;
+    background-color: rgb(33, 27, 83);
 }
 nav{
     background-color: rgb(33, 27, 83);
@@ -14,15 +14,101 @@ h3{
     font-size: 3vw;
 }
 .menu{
-    align-self: flex-end;
-    margin: 10px;
+    /* align-self: flex-end; */
+    /* justify-self: flex-end; */
+    /* background-color: red; */
+    padding-top: 10px;
+    /* margin: 10px; */
 }
 .menu ul li{
     display: inline;
     color: white;
-    margin: 10px;
+    margin-right: 25px;
 
 }
-.menu ul li:hover{
-    pointer-events: stroke;
+.menu ul li a{
+    text-decoration: none;
+    color: white;
 }
+@media (max-width: 772px) {
+    .menu {
+      display: none;
+    } 
+    .sec1{
+        margin-top: 45px;
+    }
+    }
+@media (min-width: 772px) {
+        .menu-icon {
+          display: none;
+        } 
+        .sec1{
+            margin-top: 80px;
+        }
+        }    
+
+/* Mobile */
+.boardtext1 {
+    margin-top: 50px;
+}
+.boardtext2 {
+    margin-top: 35px;
+}
+.boardbuttons{
+    margin-top: 60px;
+}
+
+@media (max-width:772px) {
+    .condition1{
+        display: none;
+    }
+}
+
+@media (min-width:772px) {
+    .condition2{
+        display: none;
+    }
+}       
+
+/* Tablet */
+@media (min-width:600px) {
+    .boardbuttons{
+        margin-top: 80px;
+    }
+}
+
+/* Desktop */
+@media (min-width:900px) {
+    .boardbuttons{
+        margin-top: 130px;
+    }
+}        
+
+.footerh5 ul li{
+    display: block;
+    margin-left: -40px;
+}
+
+.titleunderline{
+    width: 10px;
+    transition: width 0.5s;
+    transform: translate(2px);
+}
+.titleunderline:hover{
+    width: 100px;
+}
+
+
+.reveal{
+    position: relative;
+    transform: translateX(-10px);
+    /* opacity: 0; */
+    width: 10px;
+    transition: 1.5s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateX(0);
+    /* opacity: 1; */
+    width: 100px;
+  }
