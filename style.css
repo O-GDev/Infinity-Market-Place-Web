@@ -142,10 +142,14 @@ h3{
     /* .headh5{
         margin: 400px;
     } */
-    .zoom{
-        width: 95%;
-        
+    .zoomimage1{
+        width: 100%;
+        border-width: 0px;
+        border-color: #E9E9E9;
         height: 100%
+    }
+    .zoom{
+       border-width: 0px;
     }
 }
 /* @media (min-width:600px) {
@@ -158,6 +162,9 @@ h3{
     .zoom {
         height: 200%;
         width: 65%;
+        border-color: white;
+        border-width: 5px;
+        border-style: solid;
     }
     .zoomimage1:hover {
         position: absolute;
