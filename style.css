@@ -63,6 +63,12 @@ h3{
         display: none;
     }
 }
+@media (min-width:900px) {
+    .hers{
+        display: block;
+        margin-top: 25%;
+    }
+}
 
 @media (min-width:772px) {
     .condition2{
@@ -112,6 +118,8 @@ h3{
     /* opacity: 1; */
     width: 100px;
   }
+
+  
 
   footer{
     margin-top: 20px;
