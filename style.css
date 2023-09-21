@@ -131,14 +131,19 @@ h3{
   footer{
     margin-top: 100px;
   }
-
+  .footerh5{
+    /* text-align: center; */
+    width: 180px;
+  }
 
   @media (max-width:772px) {    
   .footerh2{
     text-align: center;
+    width: 100%;
 }
   .footerh5{
     text-align: center;
+    width: 100%;
   }
     .zoomimage1{
         width: 100%;
