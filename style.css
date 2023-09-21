@@ -99,6 +99,7 @@ h3{
 .footerh5 ul li{
     display: block;
     margin-left: -40px;
+    padding-top: 15px;
 }
 
 .titleunderline{
@@ -131,17 +132,14 @@ h3{
     margin-top: 100px;
   }
 
+
+  @media (max-width:772px) {    
   .footerh2{
     text-align: center;
 }
   .footerh5{
     text-align: center;
   }
-
-  @media (max-width:772px) {
-    /* .headh5{
-        margin: 400px;
-    } */
     .zoomimage1{
         width: 100%;
         border-width: 0px;
@@ -222,3 +220,13 @@ h3{
 a{
     text-decoration: none;
 } 
+
+.hov:hover{
+    background-color: #9B3FF6 ;
+}
+
+.footer{
+    background-color: white;
+    width: 100%;
+    padding: 5px;
+}
