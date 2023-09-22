@@ -245,8 +245,13 @@ a{
     padding: 5px;
 }
 
+#phone-menus{
+    display: none;
+}
+
 .phone-menu{
     background-color: white;
+    border-radius: 5px;
     position: absolute;
     right: 0px;
     top: 0px;
@@ -269,7 +274,7 @@ a{
     text-decoration: none;
 }
 
-.phone-menu ul li:hover{
+#a:hover{
     width: 100%;
    background-color: #9B3FF6;
 }
