@@ -207,14 +207,28 @@ h3{
         transform: scale(1.5);
         /* transform: scale(0.5); (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
       }
-} 
+    } 
 
-@media (min-width:772px) {
+    .void{
+        position: relative;
+        /* background-color: red; */
+        height: 550px;
+    }    
+
+/* @media (min-width:772px) { */
     .banner1{
-        height: 400px;
+        height: 500px;
     }
-}        
+
+    .boardtext1 {
+        margin-top: 100px;
+    }
+   
+/* }         */
 @media (min-width:900px) {
+    .void{
+        height: 550px;
+    }
     .boardtext1 {
         margin-top: 150px;
     }
