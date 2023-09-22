@@ -210,7 +210,7 @@ h3{
     } 
 
     .void{
-        position: relative;
+        /* position: relative; */
         /* background-color: red; */
         height: 550px;
     }    
