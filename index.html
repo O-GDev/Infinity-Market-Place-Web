@@ -42,7 +42,7 @@
                         <h3 style="font-size: 100%;">Infinity Market Place</h3>
                     </div>
                     <div id="menu-close-icon" style="padding-bottom: 10px;">
-                      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size: 40px;">×</a>
+                      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size: 30px;color: white;">×</a>
                     </div> 
                     <div class="menu-icon" id="menu-icon-id">
                       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -114,6 +114,7 @@
                   <hr style="background-color: white;">
                 </div>
 
+                <div onclick="closeNav()">
                 <div style="margin: auto;justify-content: center;align-content: center;">
                   <h3 style="text-align: center;font-size: 150%;color: transparent;-webkit-text-stroke-width: 1px;
                   -webkit-text-stroke-color: white;" class="boardtext1"> Shop like a pro, all in one platform.</h3>
@@ -145,7 +146,7 @@
                 </div>
         
               </div>
-        
+                </div>
           </div>
             </div>
             <div class="carousel-item">
@@ -154,6 +155,9 @@
                     <div >
                         <h3 style="font-size: 100%;">Infinity Market Place</h3>
                     </div>
+                    <div id="menu-close-icon" style="padding-bottom: 10px;">
+                      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size: 30px;color: white;">×</a>
+                    </div> 
                     <div id="menu-close-icon" style="padding-bottom: 10px;">
                       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size: 40px;">×</a>
                     </div> 
@@ -226,7 +230,7 @@
                 <div style="width: 97%;margin: auto;">
                   <hr style="background-color: white;">
                 </div>
-        
+        <div onclick="closeNav()">
                 <div style="margin: auto;justify-content: center;align-content: center;">
                   <h3 style="text-align: center;font-size: 150%;color: white;" class="boardtext1">Exclusive Deals and Discounts.</h3>
                   <h5 style="text-align: center;color: white;font-size: 120%;" class="boardtext2">Unlock unbeatable deals and exclusive discounts on your favorite products.</h5>
@@ -256,7 +260,7 @@
                 </div>
         
               </div>
-        
+        </div>
           </div>
             </div>
             <div class="carousel-item">
@@ -1056,6 +1060,11 @@ function myFunction() {
   document.getElementById("phone-menus").style.display = "block";
   document.getElementById("menu-icon-id").style.display = "none";
   document.getElementById("menu-close-icon").style.display = "block";
+}
+function closeNav(){
+  document.getElementById("phone-menus").style.display = "none";
+  document.getElementById("menu-icon-id").style.display = "block";
+  document.getElementById("menu-close-icon").style.display = "none";  
 }
 
        </script>
