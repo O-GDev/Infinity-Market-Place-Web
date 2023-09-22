@@ -41,7 +41,10 @@
                     <div >
                         <h3 style="font-size: 100%;">Infinity Market Place</h3>
                     </div>
-                    <div class="menu-icon">
+                    <div id="menu-close-icon" style="padding-bottom: 10px;">
+                      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size: 40px;">×</a>
+                    </div> 
+                    <div class="menu-icon" id="menu-icon-id">
                       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                         <button style="background-color: transparent;border: none;">                    
                         <div style="background-color: white;width: 5vw;height: 1px;margin:5px"></div>
@@ -151,7 +154,10 @@
                     <div >
                         <h3 style="font-size: 100%;">Infinity Market Place</h3>
                     </div>
-                    <div class="menu-icon">
+                    <div id="menu-close-icon" style="padding-bottom: 10px;">
+                      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size: 40px;">×</a>
+                    </div> 
+                    <div class="menu-icon" id="menu-icon-id">
                       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                         <button style="background-color: transparent;border: none;">                    
                         <div style="background-color: white;width: 5vw;height: 1px;margin:5px"></div>
@@ -259,7 +265,10 @@
                     <div >
                         <h3 style="font-size: 100%;">Infinity Market Place</h3>
                     </div>
-                    <div class="menu-icon">
+                    <div id="menu-close-icon" style="padding-bottom: 10px;">
+                      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size: 40px;">×</a>
+                    </div>                    
+                    <div class="menu-icon" id="menu-icon-id">
                       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                         <button style="background-color: transparent;border: none;">                    
                         <div style="background-color: white;width: 5vw;height: 1px;margin:5px"></div>
@@ -1045,6 +1054,8 @@ window.addEventListener("scroll", reveal);
 
 function myFunction() {
   document.getElementById("phone-menus").style.display = "block";
+  document.getElementById("menu-icon-id").style.display = "none";
+  document.getElementById("menu-close-icon").style.display = "block";
 }
 
        </script>
