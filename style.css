@@ -252,10 +252,15 @@ a{
     top: 0px;
     margin: 15px;
     margin-right: 45px;
-    width: 150px;
+    width: 180px;
     color: black;
+    /* height: 250px; */
     /* text-align: fle; */
 
+}
+.phone-menu ul li{
+    /* width: 100%;x     */
+    padding: 5px;
 }
 .phone-menu ul li a{
     padding-left: 20px;
@@ -264,7 +269,7 @@ a{
     text-decoration: none;
 }
 
-.phone-menu ul li a:hover{
+.phone-menu ul li:hover{
     width: 100%;
    background-color: #9B3FF6;
 }
