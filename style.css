@@ -248,7 +248,9 @@ a{
 #phone-menus{
     display: none;
 }
-
+.menu-close-icon{
+    display: none;
+}
 .phone-menu{
     background-color: white;
     border-radius: 5px;
