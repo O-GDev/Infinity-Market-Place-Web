@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'InfMPWeb',
 ]
 
 MIDDLEWARE = [
@@ -79,7 +80,7 @@ DATABASES = {
         # 'NAME': BASE_DIR / 'db.sqlite3',
         'NAME':'wajidb',
         'USER':'root',
-        'PASSWORD':'Gbogo@israel321',
+        'PASSWORD':'',
         'HOST':'localhost',
         'PORT':'3306',
     }
