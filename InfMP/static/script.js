@@ -28,3 +28,22 @@ function closeNav(){
   document.getElementById("menu-icon-id").style.display = "block";
   document.getElementById("menu-close-icon").style.display = "none";  
 }
+const progressBar = document.querySelector('.progressBar');
+const section = document.querySelector('section');
+
+function scrollProgressBar(){
+    let scrollDistance = -(section.getBoundingClientRect().top);
+    let progressPercentage =
+        (scrollDistance /
+            (section.getBoundingClientRect().height - 
+                document.documentElement.clientHeight)) * 100;
+
+    let val = Math.floor(progressPercentage);
+    progressBar.style.width = val + '%';
+
+    if (val < 0) {
+        progressBar.style.width = '0%';
+    }
+};
+
+window.addEventListener('onsubmit', scrollProgressBar);
