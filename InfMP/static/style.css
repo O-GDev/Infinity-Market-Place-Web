@@ -104,7 +104,7 @@ h3{
 }
 
 .titleunderline{
-    width: 10px;
+    width: 1000px;
     transition: width 0.5s;
     transform: translate(2px);
 }
@@ -178,24 +178,24 @@ h3{
     }
     .zoomimage1:hover {
         position: absolute;
-        margin: 110px;
-        margin-right: 200px;
-        /* margin-left: 100px; */
+        /* margin: 110px; */
+        margin-right: 100px;
+        margin-left: 150px;
         /* float: right; */
         /* height: 500px; */
-        transform: scale(1.25);
+        transform: scale(0.8);
         /* transform: scale(0.5); (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
       }
 } 
     @media (min-width:900px) {
         .zoomimage2:hover {
             position: relative;
-            margin: 110px;
-            margin-left: -100px;
-            /* margin-right: -100px; */
+            /* margin: 110px; */
+            margin-left: -150px;
+            margin-right: 150px;
             /* width: 190px; */
             /* float: right; */
-            transform: scale(1.25);
+            transform: scale(0.8);
             /* transform: scale(0.5); (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
           }
 } 
@@ -229,10 +229,10 @@ h3{
 /* }         */
 @media (min-width:900px) {
     .void{
-        height: 550px;
+        height: 700px;
     }
     .boardtext1 {
-        margin-top: 150px;
+        margin-top: 300px;
     }
     .boardtext2 {
         margin-top: 25px;
@@ -241,7 +241,7 @@ h3{
         margin-top: 120px;
     }
     .banner1 {
-      height: 500px;
+      height: 700px;
     }
     .phone-menu{
         display: none;
@@ -295,4 +295,7 @@ a{
 #a:hover{
     width: 100%;
    background-color: #9B3FF6;
+}
+.submit{
+    background-color: #9B3FF6;
 }

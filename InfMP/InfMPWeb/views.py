@@ -4,3 +4,6 @@ from django.shortcuts import render
 
 def home(request):
     return render(request, 'index.html', {})
+
+def sellerlogin(request):
+    return render(request, 'sellerlogin.html', {})
