@@ -9,10 +9,36 @@ def home(request):
     return render(request, 'index.html', {})
 
 def sellerlogin(request):
-    return render(request, 'sellerlogin.html', {})
+    if request.method == "POST":
+        username = request.POST['email']
+        password = request.POST['password']
+        #  Authenticate
+        user = authenticate(request, username=username, password = password )
+        if user is not None:
+            login(request, user)
+            messages.success(request,"You have successfully logged in!")
+            return redirect('')
+        else:
+            messages.success(request, "There was an error logging in!")
+            return redirect('sellerlogin')
+    else:
+        return render(request, 'sellerlogin.html', {})    
 
 def buyerlogin(request):
-    return render(request, 'buyerlogin.html', {})
+    if request.method == "POST":
+        username = request.POST['email']
+        password = request.POST['password']
+        #  Authenticate
+        user = authenticate(request, username=username, password = password )
+        if user is not None:
+            login(request, user)
+            messages.success(request,"You have successfully logged in!")
+            return redirect('')
+        else:
+            messages.success(request, "There was an error logging in!")
+            return redirect('buyerlogin')
+    else:
+        return render(request, 'buyerlogin.html', {}) 
 
 
 
@@ -51,17 +77,23 @@ def register_buyer(request):
     return render(request, 'sellersignup.html', {'form':form}) 
 
 
+
 def about(request):
     return render(request, 'about.html', {})
-
 
 def services(request):
     return render(request, 'services.html', {})
 
-
 def pricing(request):
     return render(request, 'pricing.html', {})
 
-
 def help(request):
     return render(request, 'help.html', {})    
+
+
+
+def sellerdashboard(request):
+    return render(request,'sellerdashboard.html',{})
+
+def buyerdashboard(request):
+    return render(request,'buyerdashboard.html',{})
