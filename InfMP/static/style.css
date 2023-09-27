@@ -300,15 +300,31 @@ a{
     background-color: #9B3FF6;
 }
 .progressBar {
-position: fixed;
-top: 0;
-left: 0;
+/* position: fixed; */
 height: 10px;
 /* background-color: red; */
 /* background: linear-gradient(to right, #ff5f6d, #ffc371); */
 background: #702EB2;
 border-radius: 20px;
-width: 10%;
+width: 0%;
 z-index: 100;
 transition: width 0.2s ease-out;
+}
+.form-control{
+    border-radius: 100px;
+}
+#id_email{
+    border-radius: 100px;
+}
+#id_first_name{
+    border-radius: 100px;
+}
+#id_last_name{
+    border-radius: 100px;
+}
+#id_password1{
+    border-radius: 100px;
+}
+#id_password2{
+    border-radius: 100px;
 }

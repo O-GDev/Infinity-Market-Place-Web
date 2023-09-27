@@ -29,13 +29,23 @@
                     </div>
                   </div> -->
 
-                  <div class="progressBar"></div>
-
-                  <h4 style="margin-bottom: -10px;font-size: xx-large;margin-top: 15px;">Be A Seller!</h4>
-                <div style="width: 7%;margin-left: 300px;">
-                  <hr class="titleunderline reveal" style="background-color: #9B3FF6;text-align: center;">
-                </div>
-                <h3 style="color: black;font-weight: 300;margin-top: -16px;margin-bottom: 45px;">Create An Account</h3>
+                 
+                <div id="firstslide">
+                    <div style="display: flex;justify-content: space-around;">
+                        <!-- <div></div> -->
+                        <div style="width: 15%;background-color: white;border-radius: 20px;">
+                            <div class="progressBar" id="myProgressBar" style="height: 10px;background: #702EB2;
+    border-radius: 20px;width: 25%;z-index: 100;transition: width 0.2s ease-out;"></div>
+                        </div>
+                        <!-- <div></div> -->
+                      </div>
+    
+    
+                      <h4 style="margin-bottom: -10px;font-size: xx-large;margin-top: 15px;">Be A Seller!</h4>
+                    <div style="width: 7%;margin-left: 300px;">
+                      <hr class="titleunderline reveal" style="background-color: #9B3FF6;text-align: center;">
+                    </div>
+                    <h3 style="color: black;font-weight: 300;margin-top: -16px;margin-bottom: 45px;">Create An Account</h3>
                 <div style="display: flex;justify-content: space-around;">
                 <!-- <div></div> -->
                 <div style="border-color: #9B3FF6;border-radius: 35px;border-style: solid;padding: 10px;width: 50%;">
@@ -58,18 +68,208 @@
                 </div>
                </div>
 
-               <div>
+               <div >
                 <form method="POST">
                     {% csrf_token %}
 
-                    {{ form.as_p }}
-                    <input type="submit" value="Sign Up" class="submit" style="border-color: #9B3FF6;padding: 10px;font-size: 25px;border-radius: 30px;width: 150px;border-width: 2px;">
+                    <div style="display: flex;justify-content: space-evenly;">
+                        <div style="width: 75%;">
+                            <p style="text-align: start;margin-left: 30px;color: #9B3FF6;font-weight: 500;">First Name<span style="color: rgb(223, 115, 87);">*</span></p>
+                    <p style="text-align: start;margin-left: 30px;margin-top: -15px;">
+                        {{ form.first_name }}
+                    </p>
+                        </div>
+                    <div style="width: 75%;">
+                        <p style="text-align: start;margin-left: 30px;color: #9B3FF6;font-weight: 500;">Last Name<span style="color: rgb(223, 115, 87);">*</span></p>
+                    <p style="text-align: start;margin-left: 30px;margin-top: -15px;">
+                        {{ form.last_name }}
+                    </p>
+                    </div>
+                    </div>
+                    <p style="text-align: start;margin-left: 30px;color: #9B3FF6;font-weight: 500;">Email Address<span style="color: rgb(223, 115, 87);">*</span></p>
+                    <p style="text-align: start;margin-left: 30px;margin-top: -15px;">
+                        {{ form.email }}
+                    </p>
+                   
+                    <div style="display: flex;justify-content: space-evenly;">
+                     <div style="width: 75%;">   
+                        <p style="text-align: start;margin-left: 30px;color: #9B3FF6;font-weight: 500;">Password<span style="color: rgb(223, 115, 87);">*</span></p>
+                        <p style="text-align: start;margin-left: 30px;margin-top: -15px;">
+                            {{ form.password1 }}
+                        </p>
+                    </div>
+                    <div style="width: 75%;">
+                        <p style="text-align: start;margin-left: 30px;color: #9B3FF6;font-weight: 500;">Confirm Password<span style="color: rgb(223, 115, 87);">*</span></p>
+                        <p style="text-align: start;margin-left: 30px;margin-top: -15px;">
+                            {{ form.password2 }}
+                        </p>
+                    </div>
+                    </div>
+
+                    <div class="form-check" style="float: left;margin-left: 30px;">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault" style="color: #9B3FF6;">
+                          I agree to the Terms, Condition and Privacy Policy
+                        </label>
+                      </div>
+
+                    <!-- {{ form.first_name }} -->
+                    <br>
+                    <br>
+                    <br>
+                      <div>
+                        <input type="submit" value="Sign Up" class="submit" onsubmit="" style="background-color: transparent;border-color: #9B3FF6;padding: 10px;font-size: 25px;border-radius: 30px;width: 150px;border-width: 2px;padding-left: 150px;padding-right: 215px;">
+                        </div>
                 </form>
                </div>
+               <div style="margin-top: 2%;">
+                <h4 style="text-align: center;font-weight: 300;font-size: large;">Already Have An Account? <a href="/sellerlogin/" style="color: #9B3FF6;">Sign In</a></h4>
             </div>
-            <div style="margin-top: 25%;">
-                <h4 style="text-align: center;font-weight: 300;font-size: large;">Don't have an account yet? <a href="#" style="color: #9B3FF6;">Sign Up</a></h4>
+                </div>
+                <div id="secondslide">
+                    <div style="display: flex;justify-content: space-around;">
+                        <!-- <div></div> -->
+                        <div style="width: 15%;background-color: white;border-radius: 20px;">
+                            <div class="progressBar" id="myProgressBar" style="height: 10px;background: #702EB2;
+    border-radius: 20px;width: 50%;z-index: 100;transition: width 0.2s ease-out;"></div>
+                        </div>
+                        <!-- <div></div> -->
+                      </div>
+    
+    
+                      <h4 style="margin-bottom: -10px;font-size: xx-large;margin-top: 15px;">Be A Seller!</h4>
+                    <div style="width: 7%;margin-left: 300px;">
+                      <hr class="titleunderline reveal" style="background-color: #9B3FF6;text-align: center;">
+                    </div>
+                    <h3 style="color: black;font-weight: 300;margin-top: -16px;margin-bottom: 45px;">Choose Your Product Market</h3>                
+                    <div class="row">
+                        <div class="col-sm-6">
+                          <div style="margin: 10px;background-color: white;border-radius: 15px;">
+                            <div style="background-image: url('../../static/assets/1\ \(4\).png');height: 250px;border-top-left-radius: 15px;border-top-right-radius: 15px;">
+                              <!-- <div style="padding-top: 15px;">                  
+                                <img src="{% static '../../static/assets/1 (12).png' %}" >
+                              </div>
+                              <div style="height: 90px;"></div>
+                              <div style="display: flex;flex-direction: row;justify-content: space-between;margin-top: 70px">
+                                <div></div>
+                                <div>
+                                  <img src="{% static '../../static/assets/1 (11).png' %}" style="margin: auto;background-color: white;padding: 10px;border-radius: 40px;">
+                                  <img src="{% static '../../static/assets/1 (10).png' %}" style="margin: auto;background-color: white;padding: 10px;border-radius: 40px;">
+                                </div>
+                                <div></div>
+                              </div> -->
+                              </div>
+                          <!-- <div>
+                            <div>
+                              <h5>Video Editing</h5>
+                              <h6>$ 25.00/hr</h5>
+                            </div>
+                              <div style="display: flex;justify-content: space-between;flex-direction: row;">
+                              <div></div>
+                              <div></div>
+                              <div style="display: flex;flex-direction: row-reverse;border-radius: 100px;background-color: #9B3FF6;padding: 5px;width: 50px;height: 30px;margin: 15px;">
+                                <h6 >4.6</h6>
+                              <img src="{% static '../../static/assets/1 (9).png' %}" style="width: 20px;height: 20px;">
+                              </div>
+                              </div>
+                          </div> -->
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div style="margin: 10px;background-color: white;border-radius: 15px;">
+                            <div style="background-image: url('../../static/assets/1\ \(5\).png');height: 250px;border-top-left-radius: 15px;border-top-right-radius: 15px;">
+                              <!-- <div style="padding-top: 15px;">                  
+                                <img src="{% static '../../static/assets/1 (12).png' %}" >
+                              </div>
+                              <div style="height: 90px;"></div>
+                              <div style="display: flex;flex-direction: row;justify-content: space-between;margin-top: 70px">
+                                <div></div>
+                                <div>
+                                  <img src="{% static '../../static/assets/1 (11).png' %}" style="margin: auto;background-color: white;padding: 10px;border-radius: 40px;">
+                                  <img src="{% static '../../static/assets/1 (10).png' %}" style="margin: auto;background-color: white;padding: 10px;border-radius: 40px;">
+                                </div>
+                                <div></div>
+                              </div> -->
+                              </div>
+                          <div>
+                            
+                              <!-- <div style="display: flex;justify-content: space-between;flex-direction: row;">
+                              <div></div>
+                              <div></div>
+                              <div style="display: flex;flex-direction: row-reverse;border-radius: 100px;background-color: #9B3FF6;padding: 5px;width: 50px;height: 30px;margin: 15px;">
+                                <h6 >4.6</h6>
+                              <img src="{% static '../../static/assets/1 (9).png' %}" style="width: 20px;height: 20px;">
+                              </div>
+                              </div> -->
+                          </div>
+                          </div>
+                        </div>
+                       </div>          
+              
+                </div>
+                <div id="thirdslide">
+                    <div style="display: flex;justify-content: space-around;">
+                        <!-- <div></div> -->
+                        <div style="width: 15%;background-color: white;border-radius: 20px;">
+                            <div class="progressBar" id="myProgressBar" style="height: 10px;background: #702EB2;
+    border-radius: 20px;width: 75%;z-index: 100;transition: width 0.2s ease-out;"></div>
+                        </div>
+                        <!-- <div></div> -->
+                      </div>
+    
+    
+                      <h4 style="margin-bottom: -10px;font-size: xx-large;margin-top: 15px;">Be A Seller!</h4>
+                    <div style="width: 7%;margin-left: 300px;">
+                      <hr class="titleunderline reveal" style="background-color: #9B3FF6;text-align: center;">
+                    </div>
+                    
+                    <h3 style="color: black;font-weight: 300;margin-top: -16px;margin-bottom: 45px;">Choose Your Market</h3> 
+                        <div>
+                            <input type="checkbox" class="btn-check" id="btn-check-2-outlined" checked autocomplete="off">
+                            <label class="btn btn-outline-secondary" for="btn-check-2-outlined">
+                                <div class="form-check">
+                                <input type="checkbox"
+                                 >
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  Default checkbox
+                                </label>
+                              </div>
+                            </label><br>
+                            <div style="margin-top: 15%;">
+                                <input type="search" style="width: 80%;border-radius: 20px;padding-left: 10px;" placeholder="Search...">
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <div style="display: flex;justify-content: flex-end;">
+                                    <input type="submit" value="Continue" style="padding: 10px;font-size: large;background-color: transparent;border-color: #9B3FF6;color: #9B3FF6;">
+                                </div>
+                                </div>
+                        </div>
+                </div>
+                <div id="forthslide"> 
+                    <div style="display: flex;justify-content: space-around;">
+                        <!-- <div></div> -->
+                        <div style="width: 15%;background-color: white;border-radius: 20px;">
+                            <div class="progressBar" id="myProgressBar" style="height: 10px;background: #702EB2;
+    border-radius: 20px;width: 100%;z-index: 100;transition: width 0.2s ease-out;"></div>
+                        </div>
+                        <!-- <div></div> -->
+                      </div>
+    
+    
+                      <h4 style="margin-bottom: -10px;font-size: xx-large;margin-top: 15px;">Be A Seller!</h4>
+                    <div style="width: 7%;margin-left: 300px;">
+                      <hr class="titleunderline reveal" style="background-color: #9B3FF6;text-align: center;">
+                    </div>                    
+                    <h3 style="color: black;font-weight: 300;margin-top: -16px;margin-bottom: 45px;">Set Up your Profile</h3>
+                    
+                    <div style="display: flex;justify-content: flex-end;">
+                        <input type="submit" value="Continue" style="padding: 10px;font-size: large;background-color: transparent;border-color: #9B3FF6;color: #9B3FF6;">
+                    </div>
+                </div>
             </div>
+            
           </div>
           <div class="col-sm-6" style="background-color: transparent;background-image: url('../../static/assets/1\ \(15\).png');height: 100vh;width: 100%;">            
           </div>
@@ -83,6 +283,11 @@
 
 {% endblock %}
     </body>
+    <script>
+        function progress(){
+            alert('sagansnk')
+        }
+    </script>
     <!-- <style>
         .progressBar {
 position: fixed;

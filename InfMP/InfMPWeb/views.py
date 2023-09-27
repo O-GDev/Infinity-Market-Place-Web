@@ -9,8 +9,6 @@ def home(request):
     return render(request, 'index.html', {})
 
 def sellerlogin(request):
-    # if request.method == 'POST':
-
     return render(request, 'sellerlogin.html', {})
 
 def buyerlogin(request):
@@ -34,3 +32,36 @@ def register_seller(request):
         form = SignUpForm()
         return render(request, 'sellersignup.html', {'form':form})   
     return render(request, 'sellersignup.html', {'form':form})            
+
+def register_buyer(request):   
+    if request.method == 'POST':
+        form = SignUpForm(request.POST)
+        if form.is_valid():
+            form.save()
+            # Authentication
+            username = form.cleaned_data['email']
+            password = form.cleaned_data['password1']
+            user = authenticate(username=username,password=password)
+            login(request, user)
+            messages.success(request, "you have successfully logged In!")
+            return redirect('home')
+    else:
+        form = SignUpForm()
+        return render(request, 'sellersignup.html', {'form':form})   
+    return render(request, 'sellersignup.html', {'form':form}) 
+
+
+def about(request):
+    return render(request, 'about.html', {})
+
+
+def services(request):
+    return render(request, 'services.html', {})
+
+
+def pricing(request):
+    return render(request, 'pricing.html', {})
+
+
+def help(request):
+    return render(request, 'help.html', {})    
