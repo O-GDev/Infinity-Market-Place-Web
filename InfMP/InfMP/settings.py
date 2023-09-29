@@ -138,4 +138,4 @@ STATICFILES_DIRS = [
 ]
 # Add the following line to your urlpatterns if you're using Django's development server
 # if settings.DEBUG:
-#     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) assets/1 (2).png)
+#     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

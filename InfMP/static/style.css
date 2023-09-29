@@ -328,3 +328,27 @@ transition: width 0.2s ease-out;
 #id_password2{
     border-radius: 100px;
 }
+
+#secondslide{
+    display: none;
+}
+
+#thirdslide{
+    display: none;
+}
+
+#forthslide{
+    display: block;
+}
+.cons{
+    width: 15%;
+    background-color: white;
+    border-radius: 0px;
+    height: 10px;
+} 
+.active{      
+width: 25%;
+background-color: #702EB2;
+/* border-top-right-radius: 20px;
+border-bottom-right-radius: 20px; */
+}
