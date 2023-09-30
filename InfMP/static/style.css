@@ -350,12 +350,12 @@ transition: width 0.2s ease-out;
 }
 
 #forthslide{
-    display: block;
+    display: none;
 }
 .cons{
     width: 15%;
     background-color: white;
-    border-radius: 0px;
+    border-radius: 30px;
     height: 10px;
 } 
 .active{      
